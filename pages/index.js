@@ -791,7 +791,6 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
               }}
               onMouseOver={(e) => e.target.style.backgroundColor = '#B8915A'}
               onMouseOut={(e) => e.target.style.backgroundColor = '#C8A15A'}
-            >
               Book Your Strategy Call Now
             </a>
           </div>
