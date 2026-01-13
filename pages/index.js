@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Calendar, Sparkles, Clock, Lightbulb, Heart, Laugh } from 'lucide-react';
+import { Calendar, Sparkles, Lightbulb, Heart, Laugh } from 'lucide-react';
 
 export default function ContentCalendarGenerator() {
   const [step, setStep] = useState('welcome');
@@ -55,7 +55,6 @@ export default function ContentCalendarGenerator() {
     setStep('loading');
 
     try {
-      // Generate calendar in 4 quarters to ensure completion
       const quarters = [
         { start: 1, end: 13, focus: 'Building connection and trust (mix of relatable + inspirational + some educational)' },
         { start: 14, end: 26, focus: 'Establishing credibility and expertise (heavier educational + inspirational)' },
@@ -261,7 +260,6 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
           </div>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '32px' }}>
-            {/* Question 1 */}
             <div style={{ borderBottom: '1px solid #B7C7B3', paddingBottom: '32px' }}>
               <label style={{
                 display: 'block',
@@ -291,7 +289,6 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
               />
             </div>
 
-            {/* Question 2 */}
             <div style={{ borderBottom: '1px solid #B7C7B3', paddingBottom: '32px' }}>
               <label style={{
                 display: 'block',
@@ -345,7 +342,6 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
               )}
             </div>
 
-            {/* Question 3 */}
             <div style={{ borderBottom: '1px solid #B7C7B3', paddingBottom: '32px' }}>
               <label style={{
                 display: 'block',
@@ -386,7 +382,6 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
               </div>
             </div>
 
-            {/* Question 4 */}
             <div style={{ borderBottom: '1px solid #B7C7B3', paddingBottom: '32px' }}>
               <label style={{
                 display: 'block',
@@ -416,7 +411,6 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
               />
             </div>
 
-            {/* Question 5 */}
             <div style={{ borderBottom: '1px solid #B7C7B3', paddingBottom: '32px' }}>
               <label style={{
                 display: 'block',
@@ -446,7 +440,6 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
               />
             </div>
 
-            {/* Question 6 */}
             <div style={{ borderBottom: '1px solid #B7C7B3', paddingBottom: '32px' }}>
               <label style={{
                 display: 'block',
@@ -489,7 +482,6 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
               </div>
             </div>
 
-            {/* Question 7 */}
             <div style={{ paddingBottom: '32px' }}>
               <label style={{
                 display: 'block',
@@ -773,8 +765,8 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
             }}>
               Book your free 30-minute strategy call and let's turn this calendar into your content creation system.
             </p>
-            
-              href="https://calendly.com/your-calendly-link"
+            <a
+              href="https://calendly.com/jsimonesolutions/content-calendar-conversations"
               target="_blank"
               rel="noopener noreferrer"
               style={{
@@ -789,9 +781,9 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
                 fontFamily: 'Montserrat, sans-serif',
                 transition: 'background-color 0.2s'
               }}
-              onMouseOver={(e) => e.target.style.backgroundColor = '#B8915A'}</div>
+              onMouseOver={(e) => e.target.style.backgroundColor = '#B8915A'}
               onMouseOut={(e) => e.target.style.backgroundColor = '#C8A15A'}
-              ></div>
+            >
               Book Your Strategy Call Now
             </a>
           </div>
