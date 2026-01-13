@@ -119,6 +119,31 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
       }
 
       setContentCalendar(fullCalendar);
+      setContentCalendar(fullCalendar);
+
+await fetch('https://services.leadconnectorhq.com/hooks/DvWTrdD23UD09zv6GgZj/webhook-trigger/d5cf7f26-33f9-4912-a485-4d16bd9d2860YOUR_GHL_WEBHOOK_URL_HERE', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({
+    firstName: userInfo.fname,
+    lastName: userInfo.lname,
+    email: userInfo.email,
+    phone: userInfo.phone,
+
+    question1: answers.q1,
+    question2: answers.q2,
+    question3: answers.q3,
+    question4: answers.q4,
+    question5: answers.q5,
+    question6: answers.q6,
+    question7: answers.q7,
+
+    contentCalendar: fullCalendar
+  })
+});
+
+setStep('results');
+
       setStep('results');
     } catch (error) {
       console.error('Error generating calendar:', error);
