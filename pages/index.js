@@ -121,7 +121,7 @@ Generate all 13 weeks (${quarter.start}-${quarter.end}) now.`;
       setContentCalendar(fullCalendar);
       setContentCalendar(fullCalendar);
 
-await fetch('https://services.leadconnectorhq.com/hooks/DvWTrdD23UD09zv6GgZj/webhook-trigger/360220cc-3145-4cea-9601-1f797ee208f6', {
+await fetch('https://services.leadconnectorhq.com/hooks/DvWTrdD23UD09zv6GgZj/webhook-trigger/7532e71f-1d32-4afe-901f-ee567c4eec7d', {
   method: 'POST',
   headers: { 'Content-Type': 'application/json' },
   body: JSON.stringify({
