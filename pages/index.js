@@ -791,7 +791,7 @@ setStep('results');
               Book your free 30-minute strategy call and let's turn this calendar into your content creation system.
             </p>
             <a
-              href="https://calendly.com/jsimonesolutions/content-calendar-conversations"
+              href="https://api.leadconnectorhq.com/widget/bookings/content-calendar-conversations"
               target="_blank"
               rel="noopener noreferrer"
               style={{
